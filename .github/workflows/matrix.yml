@@ -4,9 +4,9 @@ jobs:
   build:
     strategy:
       matrix:
-        node_version: [12, 14, 16]
+        node-version: [12, 14, 16]
         operating-system: [ubuntu-latest, windows-latest]
-    runs_on: ${{ matrix.operating-system }}
+    runs-on: ${{ matrix.operating-system }}
     steps:
       - name: Get Code
         uses: actions/checkout@v3
